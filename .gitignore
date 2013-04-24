@@ -1,0 +1,7 @@
+cache/
+settings_local.py
+scripts/osqa.wsgi
+conf/osqa.conf
+updateipMOVED
+
+*.pyc

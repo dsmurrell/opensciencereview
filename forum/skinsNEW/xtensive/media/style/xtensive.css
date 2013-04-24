@@ -1,0 +1,300 @@
+a:link {}
+a:visited {}
+a:active {color: #999999;}
+a:link:hover, a:visited:hover, a:active:hover {cursor: pointer;} 
+
+.question-body a, .answer-body a, .comment-text a {text-decoration: underline;}
+
+
+hr {border-style: solid none none; border-width: 1px medium medium;}
+p, ol, ul, blockquote {}
+blockquote, q {quotes: none;}
+pre {width: 655px; background-color: #f5f5f5; padding: 5px 0 5px 9px; border-left: 1px solid #cccccc;}
+code {font-size: 115%;}
+blockquote {margin: 10px 0px !important; padding: 5px 0;}
+
+.question-body p, .answer-body p,
+.question-body pre, .answer-body pre,
+.question-body blockquote, .answer-body blockquote {word-wrap: break-word; width: 675px;}
+
+.question-body blockquote p, .answer-body blockquote p, .comment-text blockquote p {width: auto; margin: 0 10px;}
+
+.comment-text p, 
+.comment-text pre, 
+.comment-text blockquote {word-wrap: break-word; width: 650px;}
+
+
+p {margin-bottom: 0; margin-top: 0;}
+p + p, ul + p, ol + p {margin-bottom: 0; margin-top: 1em;}
+#contentRight p {margin-top: 6px; margin-bottom: 7px; line-height: 16px;}
+
+.topMenu {clear: both; height: 4em;}
+#top {position: relative; top: auto; right: auto; float: right; width: 100%; height: auto;}
+
+#topLinks {float: left; position: relative; width: 740px;}
+#topSearch {float: right; width: 240px;}
+
+#top {padding: 10px 18px;}
+#top a:link:hover, #top a:visited:hover, #top a:active:hover {color: #b20000;} 
+
+#navBar {margin-bottom: 0;}
+
+.clear {clear: right; height: 4.5em; padding-top: .5em;}
+#logo {float: left; width: 250px; margin: 0 25px 0 0; padding: 0;}
+#logo a {line-height: 100%;}
+#navBar .nav {float: right; width: 715px; margin: 0;}
+
+#navBar .nav a, #navBar .nav a.special {font-weight: bold; font-size: 17px; font-family: Arial, Helvetica, sans-serif; text-decoration: none !important; padding: 0 10px 3px; margin: 5px 0;}
+
+#navBar .nav a {border: none; margin-left: 11px;}
+#navBar .nav a, #navBar .nav a.on {height: 1.45em; line-height: 1.65em;}
+
+#navBar .nav a:link {background-color: #777777; color: #ffffff;}
+#navBar .nav a:visited {background-color: #777777; color: #ffffff;}
+#navBar .nav a:active {background-color: #777777; color: #ffffff;}
+#navBar .nav a:hover, #navBar .nav a:visited:hover, #navBar .nav a:active:hover {background-color: #ed0016; color: #ffffff; text-decoration: none;} 
+
+#navBar .nav a.on {border: none; background-color: #ed0016; color: #ffffff; font-weight: bold;}
+.score {font-size: 14px; margin: 0 3px 0 2px;}
+
+#searchBar {border: none; background-color: #ffffff; width: 240px; padding: 0; white-space: nowrap; padding: 0;}
+#searchBar .options {display: none;}
+
+#searchBar .searchInput {width: 150px; border: 1px solid; border-color: #bfbfbf #e9e7e3 #e9e7e3 #bfbfbf;}
+#searchBar .searchBtn {width: 4em; background-color: #fff; border: none; cursor: pointer; padding-bottom: 1px;}
+#searchBar .searchBtn:hover {background-color: #eeeeee; border: none; cursor: pointer;}
+
+#searchBtnLine {width: 1px; height: 22px; border-left: 1px dotted #bbbbbb; position: relative; top: 7px;}
+
+a#searchTrigger {position: relative; top: 4px;}
+
+a#searchTrigger img {width: 15px; height: 15px; background: url(../images/SearchTrigger.gif) left top no-repeat;}
+a#searchTrigger:link img {background-position: left 0px;}
+a#searchTrigger:visited img {background-position: left 0px;}
+a#searchTrigger:active img {background-position: left -48px;}
+a#searchTrigger:hover img, a#searchTrigger:visited:hover img, a#searchTrigger:active:hover img {background-position: left -32px;} 
+
+a#searchTrigger:focus {outline: none;}
+a#searchTrigger:focus img {background-position: left -48px;}
+
+.searchDiv {position: relative; overflow: visible;}
+
+#searchPopupWrapper {position: absolute; bottom: 0; right: 0; overflow: visible; width: 1px; height: 1px; white-space: normal;}
+
+#searchButtons {display: none;}
+#searchButtons {position: absolute; top: 0; right: 0; z-index: 2; background-color: #ffffff; border: 1px solid; border-color: #ffffff #cccccc #cccccc #ffffff; width: 10em; text-align: left;}
+#searchButtons input {background-color: #ffffff; border: none; text-align: left !important; width: 100%; cursor: pointer; height: 2em;}
+#searchButtons input:hover {background-color: #eeeeee; cursor: pointer;}
+
+
+#contentLeft {float: left; position: relative; width: 740px;}
+#contentRight {float: right; width: 240px; margin-top: 2.5em;}
+#contentFullWidth {float: left; padding: 15px 5px; width: 985px;}
+
+.boxC {border: none; background: none repeat scroll 0 0 #E5EBF8; margin-bottom: 9px;}
+.boxC h3 {font-size: 140%;}
+.boxC p {font-size: 100%;}
+.boxC .more {margin-top: 5px;}
+
+a[title='subscribe to question RSS feed']:hover {padding-top: 2px;}
+
+.tabBar {min-height: 30px; height: 2.5em; margin-bottom: 0; border-bottom: 1px dotted #bbbbbb;}
+.tabsA {position: relative; top: 0.15em;}
+.tabsA a {display: inline; float: none; height: auto; padding: 3px 10px; margin: 5px 1px 0 0; line-height: 2.5em; border: none;}
+.tabsA a.on {border-top: 1px solid #cccccc; border-right: 1px solid #cccccc; border-left: 1px solid #cccccc; border-bottom: none; padding-bottom: 0.25em;}
+.tabsA a.on:hover {border-color: #356fcb;}
+
+#room {background-color: #ffffff; border-bottom: 3px solid #777777;}
+.contentLeft #item-right {width: 684px;}
+.headNormal {font-size: 21px; line-height: 1.2em; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; padding: 1px 3px 4px;}
+.vote-buttons {width: 48px;}
+
+.answer-body {padding-right: 0; margin-bottom: .5em;}
+.question-body, .answer-body {padding-top: 1px; min-height: 65px;}
+
+.question-body p, .answer-body p, 
+.question-body li, .answer-body li, 
+.question-body blockquote, .answer-body blockquote 
+{font-size: 16px; line-height: 22px;}
+
+.question-body blockquote, .answer-body blockquote, .comment-text blockquote {background-color: #e3e3e3; border-bottom: 2px dashed #ffffff; border-top: 2px dashed #ffffff;}
+#question-table .comment-text blockquote {background-color: #e3e3e3; border-bottom: 2px dashed #f7f7f7; border-top: 2px dashed #f7f7f7;}
+
+.answered-by-owner .answer-body blockquote {background-color: #e3e3e3; border-bottom: 2px dashed #e3e3e3; border-top: 2px dashed #e3e3e3;}
+.answered-by-owner .comment-text blockquote {background-color: #ffffff; border-bottom: 2px dashed #D6DCFF; border-top: 2px dashed #D6DCFF;}
+
+.accepted-answer .answer-body blockquote {background-color: #e3e3e3; border-bottom: 2px dashed #ebffe6; border-top: 2px dashed #ebffe6;}
+.accepted-answer .comment-text blockquote {background-color: #ffffff; border-bottom: 2px dashed #ddffcf; border-top: 2px dashed #ddffcf;}
+
+
+.unanswered {background: #fcc1c3 none repeat scroll 0 0;}
+
+.short-summary {border-top: none; border-bottom: 1px dotted #bbbbbb;}
+.summary-info {float: left; width: 544px;}
+.summary-info h2 {margin-bottom: 5px;}
+.summary-info .tags {float: left; margin-top: 0;}
+.summary-info .userinfo {float: right; margin-top: 0; padding-top: 2px;}
+.short-summary h2 a {color: #1B64C9; font-size: 1.1em; position: relative; top: 2px;}
+.short-summary h2 a:focus {outline: none;}
+.tag-number {color: #222222; font-family: Verdana,sans-serif; font-size: 0.95em; font-weight: normal;}
+
+#tagSelector {padding-bottom: 10px;}
+#tagSelector .subtitle {padding: 3px 0 0 0;}
+#tagSelector #interestingTagInput, #tagSelector #ignoredTagInput {width: 150px;}
+
+.boxC .tags a {line-height: 2.15em;}
+.tags a, #contentRight span.tag {color: #676767; font-size: 12px; line-height: 2em; margin: .2em .25em 0 0; padding: 2px 4px 2px 4px; border: 1px solid; border-color: #ffffff #cccccc #cccccc #ffffff; text-transform: lowercase;}
+.tags a:hover {border-color: #356fcb;}
+
+.post-controls {font-size: 13px; position: relative; margin-bottom: 0;}
+.post-update-info-container {position: relative; top: 0;}
+.post-update-info p {font-size: 13px; padding-top: 5px;}
+div.comment-tools a {font-size: 13px;}
+
+.headUser, .scoreNumber {font-weight: bold;}
+.user-stats-table .short-summary .counts {width: 212px;}
+.user-stats-table .short-summary .summary-info {width: 520px;}
+.short-summary .favorite {width: 32px;}
+.short-summary .favorite-mark {top: 8px;}
+
+.action_container {clear: both;}
+.action_body {width: 500px; float: left; padding-bottom: 5px;}
+.action_date {width: 300px; white-space: nowrap; text-align: right; padding-bottom: 5px;}
+
+
+#question-controls .tags {margin: 5px 0;}
+
+.post-controls .action-link {}
+.post-action-links {width: 8em; position: relative; left: -1px; float: left; margin-top: 5px;}
+
+.action-link {}
+.action-link a {color: #3060a8; padding: 2px 2px; white-space: nowrap;}
+.action-link a:hover {background-color: #777777; color: #ffffff; text-decoration: none;}
+.action-link-separator {padding: 0 1px;}
+
+.comment, .comment-info, .post-update-info p {font-size: 13px;}
+.comment-text p, .comment-text ul, .comment-text ol, .comment-text pre {font-size: 16px; line-height: 140%;}
+
+#question-table .comments-container pre {background-color: #eee;}
+
+#question-table .comments-container {background-color: #f7f7f7;}
+.answered-by-owner .comments-container {background-color:#d6dcff;}
+.accepted-answer .comments-container {background-color:#ddffcf;}
+
+.comment {padding: .2em 0; border-top: 1px dashed #000000;}
+.comment-info {white-space: nowrap; float: left; margin: 0 0 8px 22px;}
+.comment-info * {float: right; height: 18px; margin: 0;}
+.comment-info a.userinfo {margin: 0 4px;}
+.comment-text p {margin-bottom: 5px;}
+.comment-text {margin: 5px 0 0 22px;}
+.comment:after {content: ''; display: block; clear: both;}
+
+.comment-form-widgets-container textarea {border: 1px solid; border-color: #bfbfbf #e9e7e3 #e9e7e3 #bfbfbf; background-color: #f9f9f9;}
+
+a.comment-like, a.comment-delete, a.comment-edit {margin-left: 1px; position: relative; top: 1px;}
+
+a.comment-delete {background: transparent url(../images/vote_sprite.png) no-repeat -31px -271px; margin-left: 3px;}
+a.comment-delete:hover {background: #dddddd url(../images/vote_sprite.png) no-repeat -31px -271px;}
+a.comment-like {background: transparent url(../images/vote_sprite.png) no-repeat -31px -303px;}
+a.comment-like:hover {background: transparent url(../images/vote_sprite.png) no-repeat -31px -287px;}
+a.comment-like.on {background: transparent url(../images/vote_sprite.png) no-repeat -47px -287px;}
+a.comment-like.on:hover {background: transparent url(../images/vote_sprite.png) no-repeat -31px -319px;}
+a.comment-edit {background: transparent url(../images/vote_sprite.png) no-repeat -31px -239px;}
+a.comment-edit:hover {background: #dddddd url(../images/vote_sprite.png) no-repeat -31px -239px;}
+
+div.comment-tools {padding: 7px 0 4px 0; border-top: none;}
+div.comment-tools a {color: #3060a8;}
+
+.comment-score {font-size: 13px; line-height: 22px;}
+
+.resizable-textarea span {display: block; width: 100%;}
+
+.short-summary .counts {width: 186px;}
+.short-summary .counts .item-count {font-size: 2.2em; font-weight: bold;}
+.short-summary .votes, .short-summary .status, .short-summary .views {border: none; -moz-border-radius-bottomleft: 0px; -moz-border-radius-bottomright: 0px; -moz-border-radius-topleft: 0px; -moz-border-radius-topright: 0px; font-size: 1em; height: 3.6em; width: 50px; margin: 0 6px 0 0; padding: 10px 2px 0;}
+.short-summary {padding: 4px 0 8px;}
+.short-summary h2 {padding: 4px 0 2px;}
+
+h2 .count {line-height: 100%;}
+
+.short-summary .votes {background-color: #eeeeee;}
+.short-summary .unanswered {background-color: #9a4444; color: #ffffff;}
+.short-summary .answered {background-color: #75845c; color: #ffffff;}
+.short-summary .answered-accepted {color: #ffffff; background: #fff url('../images/answer-accepted.gif') 7px center no-repeat;}
+.short-summary .answered-accepted div {text-indent: -3000px; white-space: nowrap;}
+.short-summary .views {background-color: #ffffff;}
+
+.user {font-size: 13px;}
+.user .thumb {margin-top: 4px;}
+
+.badge-list a.medal {color: #ffffff;}
+a.medal {border: 6px solid #777777; background-color: #777777; color: #ffffff; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -moz-border-radius-topleft: 6px; -moz-border-radius-topright: 6px; padding: 0 8px 0 2px; font-weight: normal; font-size: 12px;}
+a.medal:hover {background-image: none; border: 6px solid #999999; background-color: #999999; color: #ffffff;}
+
+#medalList .item {clear: both; line-height: 30px}
+
+.medalIcon {float: left; min-width: 30px; text-align: right; height: 30px}
+#medalList .item strong {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px;}
+.medalIcon span {font-size: 175%; padding-right: 5px; color: #5b9058;}
+.medalName {float: left; width: 230px;}
+.medalDescription {float: left; margin-top: 8px;}
+
+
+a.sidebar_button {font-size: 100%; padding:3px 8px; border: 1px solid; border-color: #ffffff #bfbfbf #bfbfbf #ffffff;}
+
+.pagesize, .pager {height: 3em; margin: 0; padding: 2em 0;}
+.pager {float: left;}
+.pagesize {float: right;}
+
+.paginator {padding: .25em 0;}
+.paginator .page a, .paginator .page a:visited, .paginator .curr {font-size: 1.4em; padding: 5px; font-family: Arial, Helvetica, sans-serif; font-weight: bold !important; -moz-border-radius-bottomleft: 4px; -moz-border-radius-bottomright: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;}
+.paginator .curr {border: 4px solid #777777; padding: 2px;}
+.paginator .page a:hover {border: 4px solid #777777; padding: 2px;}
+
+
+/* Vote */
+
+.post-score, .comments-char-left-count {font-size: 24px; line-height: 20px;}
+.vote-buttons {position: relative; top: -3px;}
+
+a.post-vote {height: 26px; width: 48px;}
+a.favorite-mark {height: 32px; width: 48px;}
+a.accept-answer {height: 48px; width: 48px;}
+
+a.post-vote.up {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat 0px -48px;}
+a.post-vote.up.on {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat -96px -48px;}
+a.post-vote.up:hover {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat -48px -48px;}
+
+a.post-vote.down {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat 0px -96px;}
+a.post-vote.down.on {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat -96px -96px;}
+a.post-vote.down:hover {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat -48px -96px;}
+
+a.favorite-mark {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat 0px 0px;}
+a.favorite-mark.on {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat -96px -0px;}
+a.favorite-mark:hover {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat -48px -0px;}
+
+a.accept-answer {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat 0px -144px;}
+a.accept-answer.on {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat -96px -144px;}
+a.accept-answer:hover {background-color: inherit; background: url(../images/vote_sprite.png) no-repeat -48px -144px;}
+
+.answer {border-bottom: none; margin-bottom: 8px;}
+
+.questions-count {font-weight: bold;}
+
+#ground {-moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding; background: #ffffff none repeat scroll 0 0; border-top: 1px solid #eeeeee;}
+
+body .syntaxhighlighter {font-size: 1.3em !important; overflow-y: hidden !important; margin: 0 0 13px 0 !important; width: 675px !important;}
+body .ie.syntaxhighlighter {font-size: 1.35em !important;}
+body .syntaxhighlighter .line.alt2, body .syntaxhighlighter .line.alt1  {background-color: #f0f0f0 !important;}
+
+#editor,
+.comment-form-widgets-container textarea 
+{font-size: 115%; line-height: 20px; font-family: Consolas, Monaco, Liberation Mono, Lucida Console, monospace;}
+
+.footerLinks .link-separator {color: #aaaaaa; font-size: 16px; line-height: 24px;}
+
+.content p, .content ul {font-size: 16px; line-height: 22px;}
+.title-desc {color: #666666; font-size: 100%;}
+
+.clearFix:after {content: ''; display: block; clear: both;}
+

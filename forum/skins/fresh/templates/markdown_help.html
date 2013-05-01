@@ -89,6 +89,34 @@
             </div>
         </div>
 
+		<div class="section">
+            <h2 class="section-title">{% trans "MathJax" %}</h2>
+            <div class="section-description">
+                {% trans "MathJax is enabled." %}
+            </div>
+            <div class="section-example">
+                <code>Use \\( and \\) to open and close inline math expressions, \\[ and \\] to open and close block math expressions, and use \\ to precede special functions, like this:</code>
+            <table class="section-example"><tr>
+                <td>
+                    <code>First text here \\(y = f(x) + \\eta\\) second text here</code>
+                </td>
+                <td>
+                    <a>{% trans "First text here \\(y = f(x) + \\eta\\) second text here" %}</a>
+                </td>
+            </tr></table>
+            
+			<table class="section-example"><tr>
+                <td>
+                    <code>First text here \\[D[x;y] = g(R^2([f(x);y])\\] second text here</code>
+                </td>
+                <td>
+                    <a>{% trans "First text here \\[D[x;y] = g(R^2([f(x);y])\\] second text here" %}</a>
+                </td>
+            </tr></table>
+            
+            </div><br />
+        </div>
+
         <div class="section">
             <h2 class="section-title">{% trans "Links" %}</h2>
             <div class="section-description">

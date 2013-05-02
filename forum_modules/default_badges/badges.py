@@ -229,7 +229,7 @@ class Pundit(AbstractBadge):
 class SelfLearner(AbstractBadge):
     listen_to = (VoteUpAction, )
     name = _("Self Learner")
-    description = _('Answered your own question with at least %s up votes') % settings.SELF_LEARNER_UP_VOTES
+    description = _('Responded to a paper you linked with at least %s up votes') % settings.SELF_LEARNER_UP_VOTES
 
     def award_to(self, action):
         if (action.node.node_type == "answer") and (action.node.author == action.node.parent.author) and (

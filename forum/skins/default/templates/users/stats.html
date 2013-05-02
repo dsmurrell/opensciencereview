@@ -11,9 +11,9 @@
         {% spaceless %}
             <h2>
                 {% blocktrans count questions.paginator.count as counter %}
-                <span class="count">{{counter}}</span> Question
+                <span class="count">{{counter}}</span> Paper
                 {% plural %}
-                <span class="count">{{counter}}</span> Questions
+                <span class="count">{{counter}}</span> Papers
                 {% endblocktrans %}
                 <a class="feed-icon" style="background-image:url('{% media "media/images/feed-icon-small.png" %}');"
                     href="{{ view_user.get_asked_url }}?type=rss" title="{% trans "subscribe to question RSS feed" %}"></a>
@@ -33,9 +33,9 @@
         {% spaceless %}
             <h2>
                 {% blocktrans count answers.paginator.count as counter %}
-                <span class="count">{{counter}}</span> Answer
+                <span class="count">{{counter}}</span> Response
                 {% plural %}
-                <span class="count">{{counter}}</span> Answers
+                <span class="count">{{counter}}</span> Responses
                 {% endblocktrans %}
             </h2>
         {% endspaceless %}

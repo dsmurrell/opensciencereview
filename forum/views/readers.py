@@ -84,8 +84,10 @@ def index(request):
 
 @decorators.render('questions.html', 'unanswered', _('unreviewed'), weight=400)
 def unanswered(request):
+    
     return question_list(request,
-                         Question.objects.exclude(id__in=Question.objects.filter(children__marked=True).distinct()).exclude(marked=True),
+                        # Question.objects.exclude(id__in=Question.objects.filter(children__marked=True).distinct()).exclude(marked=True),
+                         Question.objects.exclude(children__in=Answer.objects.filter(~Q(state_string__contains='(deleted)'))).distinct().exclude(marked=True),
                          _('unreviewed papers'),
                          None,
                          _("Be the first to review these papers"))

@@ -1,0 +1,235 @@
+/opt/bitnami/apps/osqa/forum/utils/mail.py TIME: 2013-05-03 06:33:52,012 MSG: mail.py:create_and_send_mail_messages:82 Couldn't send mail using the sendmail method: (530, 'Authentication required', u'OpenScienceReview <opensciencereview@gmail.com>')
+/opt/bitnami/apps/osqa/forum/utils/mail.py TIME: 2013-05-03 10:38:07,489 MSG: mail.py:create_and_send_mail_messages:82 Couldn't send mail using the sendmail method: (530, 'Authentication required', u'OpenScienceReview <opensciencereview@gmail.com>')
+/opt/bitnami/apps/django/lib/python2.7/site-packages/django/core/handlers/base.py TIME: 2013-05-03 10:42:47,262 MSG: base.py:handle_uncaught_exception:209 Internal Server Error: /account/twitter/signin/
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/opt/bitnami/apps/osqa/forum/views/auth.py", line 88, in prepare_provider_signin
+    kwargs={'provider': provider}))
+  File "/opt/bitnami/apps/osqa/forum_modules/oauthauth/consumer.py", line 29, in prepare_authentication_request
+    request_token = self.fetch_request_token()
+  File "/opt/bitnami/apps/osqa/forum_modules/oauthauth/consumer.py", line 66, in fetch_request_token
+    response = urllib2.urlopen(full_url)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 406, in open
+    response = meth(req, response)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 519, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 444, in error
+    return self._call_chain(*args)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 378, in _call_chain
+    result = func(*args)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 527, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 401: Unauthorized
+/opt/bitnami/apps/osqa/forum/views/meta.py TIME: 2013-05-03 10:42:47,296 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/twitter/signin/
+        USER: <anonymous>
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        		validate_email: no
+
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 80
+		HTTP_REFERER: http://opensciencereview.com/account/signin/
+		mod_wsgi.listener_host: 
+		SERVER_SOFTWARE: Apache
+		SCRIPT_NAME: 
+		mod_wsgi.enable_sendfile: 0
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /account/twitter/signin/
+		SERVER_PROTOCOL: HTTP/1.1
+		QUERY_STRING: validate_email=no
+		HTTP_ACCEPT_CHARSET: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31
+		HTTP_CONNECTION: Keep-Alive
+		HTTP_COOKIE: greeting_set=True; csrftoken=7a8573ef29ea2078ec6952b43173c2ce; sessionid=bb42b0ad7aa722149692bef8441febe6
+		SERVER_NAME: opensciencereview.com
+		REMOTE_ADDR: 137.158.153.204
+		mod_wsgi.queue_start: 1367592167069314
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		HTTP_VIA: 1.1 SRVWINTMG004, 1.1 SRVWINTMG002
+		PATH_TRANSLATED: /opt/bitnami/apps/osqa/scripts/osqa.wsgi/account/twitter/signin/
+		SERVER_PORT: 80
+		wsgi.multiprocess: True
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 10.250.20.176
+		DOCUMENT_ROOT: /opt/bitnami/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /opt/bitnami/apps/osqa/scripts/osqa.wsgi
+		SERVER_ADMIN: you@example.com
+		wsgi.input: <mod_wsgi.Input object at 0x3b374f0>
+		HTTP_HOST: opensciencereview.com
+		wsgi.multithread: False
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/twitter/signin/?validate_email=no
+		HTTP_ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+		wsgi.version: (1, 0)
+		GATEWAY_INTERFACE: CGI/1.1
+		wsgi.run_once: False
+		wsgi.errors: <mod_wsgi.Log object at 0x3d0d5b0>
+		REMOTE_PORT: 56007
+		HTTP_ACCEPT_LANGUAGE: en-US,en;q=0.8
+		mod_wsgi.version: (3, 4)
+		mod_wsgi.application_group: localhost|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x3d11468>
+		CSRF_COOKIE: 7a8573ef29ea2078ec6952b43173c2ce
+
+        COOKIES:
+        		csrftoken: 7a8573ef29ea2078ec6952b43173c2ce
+		sessionid: bb42b0ad7aa722149692bef8441febe6
+		greeting_set: True
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/opt/bitnami/apps/django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/opt/bitnami/apps/osqa/forum/views/auth.py", line 88, in prepare_provider_signin
+		    kwargs={'provider': provider}))
+		  File "/opt/bitnami/apps/osqa/forum_modules/oauthauth/consumer.py", line 29, in prepare_authentication_request
+		    request_token = self.fetch_request_token()
+		  File "/opt/bitnami/apps/osqa/forum_modules/oauthauth/consumer.py", line 66, in fetch_request_token
+		    response = urllib2.urlopen(full_url)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 126, in urlopen
+		    return _opener.open(url, data, timeout)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 406, in open
+		    response = meth(req, response)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 519, in http_response
+		    'http', request, response, code, msg, hdrs)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 444, in error
+		    return self._call_chain(*args)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 378, in _call_chain
+		    result = func(*args)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 527, in http_error_default
+		    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+		HTTPError: HTTP Error 401: Unauthorized
+		
+
+        
+/opt/bitnami/apps/osqa/forum/utils/mail.py TIME: 2013-05-04 16:47:16,065 MSG: mail.py:create_and_send_mail_messages:82 Couldn't send mail using the sendmail method: (530, 'Authentication required', u'OpenScienceReview <opensciencereview@gmail.com>')
+/opt/bitnami/apps/osqa/forum/utils/mail.py TIME: 2013-05-04 16:52:11,213 MSG: mail.py:create_and_send_mail_messages:82 Couldn't send mail using the sendmail method: (530, 'Authentication required', u'OpenScienceReview <opensciencereview@gmail.com>')
+/opt/bitnami/apps/osqa/forum/utils/mail.py TIME: 2013-05-04 16:52:34,364 MSG: mail.py:create_and_send_mail_messages:82 Couldn't send mail using the sendmail method: (530, 'Authentication required', u'OpenScienceReview <opensciencereview@gmail.com>')
+/opt/bitnami/apps/osqa/forum/utils/mail.py TIME: 2013-05-04 16:55:20,096 MSG: mail.py:create_and_send_mail_messages:82 Couldn't send mail using the sendmail method: (530, 'Authentication required', u'OpenScienceReview <opensciencereview@gmail.com>')
+/opt/bitnami/apps/osqa/forum/utils/mail.py TIME: 2013-05-04 16:58:32,504 MSG: mail.py:create_and_send_mail_messages:82 Couldn't send mail using the sendmail method: (530, 'Authentication required', u'OpenScienceReview <opensciencereview@gmail.com>')
+/opt/bitnami/apps/django/lib/python2.7/site-packages/django/core/handlers/base.py TIME: 2013-05-04 20:37:11,776 MSG: base.py:handle_uncaught_exception:209 Internal Server Error: /account/twitter/signin/
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/opt/bitnami/apps/osqa/forum/views/auth.py", line 88, in prepare_provider_signin
+    kwargs={'provider': provider}))
+  File "/opt/bitnami/apps/osqa/forum_modules/oauthauth/consumer.py", line 29, in prepare_authentication_request
+    request_token = self.fetch_request_token()
+  File "/opt/bitnami/apps/osqa/forum_modules/oauthauth/consumer.py", line 66, in fetch_request_token
+    response = urllib2.urlopen(full_url)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 406, in open
+    response = meth(req, response)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 519, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 444, in error
+    return self._call_chain(*args)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 378, in _call_chain
+    result = func(*args)
+  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 527, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 401: Unauthorized
+/opt/bitnami/apps/osqa/forum/views/meta.py TIME: 2013-05-04 20:37:11,821 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/twitter/signin/
+        USER: <anonymous>
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        		validate_email: no
+
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 80
+		HTTP_COOKIE: greeting_set=True; csrftoken=1668dc6eed36e101ce4c437b4b9da241; sessionid=d84722290164069f5c8d12cf86b7daad
+		mod_wsgi.listener_host: 
+		SERVER_SOFTWARE: Apache
+		SCRIPT_NAME: 
+		mod_wsgi.enable_sendfile: 0
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /account/twitter/signin/
+		SERVER_PROTOCOL: HTTP/1.1
+		QUERY_STRING: validate_email=no
+		HTTP_ACCEPT_CHARSET: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+		HTTP_USER_AGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31
+		HTTP_CONNECTION: keep-alive
+		HTTP_REFERER: http://opensciencereview.com/account/signin/
+		SERVER_NAME: opensciencereview.com
+		REMOTE_ADDR: 196.210.129.121
+		mod_wsgi.queue_start: 1367714231583135
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /opt/bitnami/apps/osqa/scripts/osqa.wsgi/account/twitter/signin/
+		SERVER_PORT: 80
+		wsgi.multiprocess: True
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 10.250.20.176
+		DOCUMENT_ROOT: /opt/bitnami/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /opt/bitnami/apps/osqa/scripts/osqa.wsgi
+		SERVER_ADMIN: you@example.com
+		wsgi.input: <mod_wsgi.Input object at 0x3942970>
+		HTTP_HOST: opensciencereview.com
+		wsgi.multithread: False
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/twitter/signin/?validate_email=no
+		HTTP_ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+		wsgi.version: (1, 0)
+		GATEWAY_INTERFACE: CGI/1.1
+		wsgi.run_once: False
+		wsgi.errors: <mod_wsgi.Log object at 0x3cea9f0>
+		REMOTE_PORT: 53261
+		HTTP_ACCEPT_LANGUAGE: en-US,en;q=0.8
+		mod_wsgi.version: (3, 4)
+		mod_wsgi.application_group: localhost|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x395b300>
+		CSRF_COOKIE: 1668dc6eed36e101ce4c437b4b9da241
+		HTTP_ACCEPT_ENCODING: gzip,deflate,sdch
+
+        COOKIES:
+        		csrftoken: 1668dc6eed36e101ce4c437b4b9da241
+		sessionid: d84722290164069f5c8d12cf86b7daad
+		greeting_set: True
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/opt/bitnami/apps/django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/opt/bitnami/apps/osqa/forum/views/auth.py", line 88, in prepare_provider_signin
+		    kwargs={'provider': provider}))
+		  File "/opt/bitnami/apps/osqa/forum_modules/oauthauth/consumer.py", line 29, in prepare_authentication_request
+		    request_token = self.fetch_request_token()
+		  File "/opt/bitnami/apps/osqa/forum_modules/oauthauth/consumer.py", line 66, in fetch_request_token
+		    response = urllib2.urlopen(full_url)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 126, in urlopen
+		    return _opener.open(url, data, timeout)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 406, in open
+		    response = meth(req, response)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 519, in http_response
+		    'http', request, response, code, msg, hdrs)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 444, in error
+		    return self._call_chain(*args)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 378, in _call_chain
+		    result = func(*args)
+		  File "/opt/bitnami/python/lib/python2.7/urllib2.py", line 527, in http_error_default
+		    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+		HTTPError: HTTP Error 401: Unauthorized
+		
+
+        

@@ -13,7 +13,7 @@ class QuestionViewBadge(AbstractBadge):
 
     @property
     def description(self):
-        return _('Asked a question with %s views') % str(self.nviews)
+        return _('Submitted a paper with %s views') % str(self.nviews)
 
     def award_to(self, action):
         if action.node.extra_count == int(self.nviews):
@@ -21,18 +21,18 @@ class QuestionViewBadge(AbstractBadge):
 
 
 class PopularQuestion(QuestionViewBadge):
-    name = _('Popular Question')
+    name = _('Popular Paper')
     nviews = settings.POPULAR_QUESTION_VIEWS
 
 
 class NotableQuestion(QuestionViewBadge):
     type = Badge.SILVER
-    name = _('Notable Question')
+    name = _('Notable Paper')
     nviews = settings.NOTABLE_QUESTION_VIEWS
 
 class FamousQuestion(QuestionViewBadge):
     type = Badge.GOLD
-    name = _('Famous Question')
+    name = _('Famous Paper')
     nviews = settings.FAMOUS_QUESTION_VIEWS
 
 
@@ -51,21 +51,21 @@ class QuestionScoreBadge(NodeScoreBadge):
 
     @property
     def description(self):
-        return _('Question voted up %s times') % str(self.expected_score)
+        return _('Paper voted up %s times') % str(self.expected_score)
 
 class NiceQuestion(QuestionScoreBadge):
     expected_score = settings.NICE_QUESTION_VOTES_UP
-    name = _("Nice Question")
+    name = _("Nice Paper")
 
 class GoodQuestion(QuestionScoreBadge):
     type = Badge.SILVER
     expected_score = settings.GOOD_QUESTION_VOTES_UP
-    name = _("Good Question")
+    name = _("Good Paper")
 
 class GreatQuestion(QuestionScoreBadge):
     type = Badge.GOLD
     expected_score = settings.GREAT_QUESTION_VOTES_UP
-    name = _("Great Question")
+    name = _("Great Paper")
 
 
 class AnswerScoreBadge(NodeScoreBadge):
@@ -74,21 +74,21 @@ class AnswerScoreBadge(NodeScoreBadge):
 
     @property
     def description(self):
-        return _('Answer voted up %s times') % str(self.expected_score)
+        return _('Response voted up %s times') % str(self.expected_score)
 
 class NiceAnswer(AnswerScoreBadge):
     expected_score = settings.NICE_ANSWER_VOTES_UP
-    name = _("Nice Answer")
+    name = _("Nice Response")
 
 class GoodAnswer(AnswerScoreBadge):
     type = Badge.SILVER
     expected_score = settings.GOOD_ANSWER_VOTES_UP
-    name = _("Good Answer")
+    name = _("Good Response")
 
 class GreatAnswer(AnswerScoreBadge):
     type = Badge.GOLD
     expected_score = settings.GREAT_ANSWER_VOTES_UP
-    name = _("Great Answer")
+    name = _("Great Response")
 
 
 class FavoriteQuestionBadge(AbstractBadge):
@@ -97,7 +97,7 @@ class FavoriteQuestionBadge(AbstractBadge):
 
     @property
     def description(self):
-        return _('Question favorited by %s users') % str(self.expected_count)
+        return _('Paper favorited by %s users') % str(self.expected_count)
 
     def award_to(self, action):
         if (action.node.node_type == "question") and (action.node.favorite_count == int(self.expected_count)):
@@ -105,12 +105,12 @@ class FavoriteQuestionBadge(AbstractBadge):
 
 class FavoriteQuestion(FavoriteQuestionBadge):
     type = Badge.SILVER
-    name = _("Favorite Question")
+    name = _("Favorite Paper")
     expected_count = settings.FAVORITE_QUESTION_FAVS
 
 class StellarQuestion(FavoriteQuestionBadge):
     type = Badge.GOLD
-    name = _("Stellar Question")
+    name = _("Stellar Paper")
     expected_count = settings.STELLAR_QUESTION_FAVS
 
 
@@ -253,7 +253,7 @@ class Student(AbstractBadge):
     award_once = True
     listen_to = (VoteUpAction,)
     name = _("Student")
-    description = _('Asked first question with at least one up vote')
+    description = _('Submitted first paper with at least one up vote')
 
     def award_to(self, action):
         if (action.node.node_type == "question") and (action.node.author.nodes.filter_state(deleted=False).filter(
@@ -265,7 +265,7 @@ class Teacher(AbstractBadge):
     award_once = True
     listen_to = (VoteUpAction,)
     name = _("Teacher")
-    description = _('Answered first question with at least one up vote')
+    description = _('Snswered first paper with at least one up vote')
 
     def award_to(self, action):
         if (action.node.node_type == "answer") and (action.node.author.nodes.filter_state(deleted=False).filter(
@@ -278,7 +278,7 @@ class Enlightened(AbstractBadge):
     award_once = True
     listen_to = (VoteUpAction, AcceptAnswerAction)
     name = _("Enlightened")
-    description = _('First answer was accepted with at least %s up votes') % settings.ENLIGHTENED_UP_VOTES
+    description = _('First response was accepted with at least %s up votes') % settings.ENLIGHTENED_UP_VOTES
 
     def award_to(self, action):
         if (action.node.node_type == "answer") and (action.node.accepted) and (
@@ -290,7 +290,7 @@ class Guru(AbstractBadge):
     type = Badge.SILVER
     listen_to = (VoteUpAction, AcceptAnswerAction)
     name = _("Guru")
-    description = _('Accepted answer and voted up %s times') % settings.GURU_UP_VOTES
+    description = _('Accepted response and voted up %s times') % settings.GURU_UP_VOTES
 
     def award_to(self, action):
         if (action.node.node_type == "answer") and (action.node.accepted) and (
@@ -302,7 +302,7 @@ class Necromancer(AbstractBadge):
     type = Badge.SILVER
     listen_to = (VoteUpAction,)
     name = _("Necromancer")
-    description = _('Answered a question more than %(dif_days)s days later with at least %(up_votes)s votes') % \
+    description = _('Responded to a paper more than %(dif_days)s days later with at least %(up_votes)s votes') % \
             {'dif_days': settings.NECROMANCER_DIF_DAYS, 'up_votes': settings.NECROMANCER_UP_VOTES}
 
     def award_to(self, action):
@@ -315,7 +315,7 @@ class Taxonomist(AbstractBadge):
     type = Badge.SILVER
     listen_to = tuple()
     name = _("Taxonomist")
-    description = _('Created a tag used by %s questions') % settings.TAXONOMIST_USE_COUNT
+    description = _('Created a tag used by %s papers') % settings.TAXONOMIST_USE_COUNT
 
     def award_to(self, action):
         return None

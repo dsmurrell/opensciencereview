@@ -195,7 +195,7 @@
                     {% spaceless %}
                     <div class="headNormal">
                         {% if answers %}
-                            {% trans "Your response" %}
+                            {% trans "Respond to paper" %}
                         {% else %}
                             {% trans "Be the first one to respond this paper" %}
                         {% endif %}
@@ -261,7 +261,7 @@
                 <p><span class="form-error"></span></p>
                 <input type="button"
                     {% if user.is_anonymous %}
-                        value="{% trans "Login/Signup to Post Your response" %}" 
+                        value="{% trans "Login to respond to paper" %}" 
                     {% else %}
                         {% if user == question.author %}
                         value="{% trans "Submit response" %}" 

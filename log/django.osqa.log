@@ -33,6 +33,7 @@ HTTPError: HTTP Error 401: Unauthorized
         GET PARAMETERS:
         		validate_email: no
 
+<<<<<<< Updated upstream
         HTTP HEADERS:
         		mod_wsgi.listener_port: 80
 		HTTP_REFERER: http://opensciencereview.com/account/signin/
@@ -2075,3 +2076,18 @@ TemplateDoesNotExist: sitemap_section_index.xml
 /opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-24 06:13:32,569 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
 /opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-24 06:19:22,603 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
 /opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-24 06:19:43,820 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+=======
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 14:53:39,500 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 14:54:41,675 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 14:54:47,986 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:20:54,908 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:21:32,985 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:40:08,000 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:40:26,003 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:47:39,426 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:47:52,529 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:48:11,751 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:48:33,745 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:51:56,676 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+/opt/bitnami/apps/osqa/forum/skins/__init__.py TIME: 2013-05-26 15:51:58,526 MSG: __init__.py:find_media_source:147 could not find media for media/iepngfix/iepngfix.htc
+>>>>>>> Stashed changes

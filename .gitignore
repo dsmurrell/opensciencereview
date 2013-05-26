@@ -2,6 +2,7 @@ cache/
 settings_local.py
 scripts/osqa.wsgi
 conf/osqa.conf
+log/django.osqa.log
 updateipMOVED
 .DS_Store
 *.pyc

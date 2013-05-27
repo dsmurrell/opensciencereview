@@ -51,11 +51,11 @@ $(function() {
                 }
 
                 if(data.length == 0) {
-                    relatedQuestionsDiv.html('<br /><br /><div align="center">No questions like this have been found.</div>');
+                    relatedQuestionsDiv.html('<br /><br /><div align="center">No papers like this have been found.</div>');
                     return;
                 }
 
-                var html = '';
+                var html = '<div align="center"><h4>Related papers:</h4></div>';
                 for (var i = 0; i < data.length; i++) {
                     var item = template.replace(new RegExp('%URL%', 'g'), data[i].url)
                                        .replace(new RegExp('%SCORE%', 'g'), data[i].score)

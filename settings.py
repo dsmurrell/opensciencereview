@@ -55,6 +55,7 @@ ALLOW_MAX_FILE_SIZE = 1024 * 1024
 
 # User settings
 from settings_local import *
+DISABLED_MODULES = ['books', 'recaptcha', 'project_badges','facebookauth',"oauthauth"]
 
 try:
     if len(FORUM_SCRIPT_ALIAS) > 0:

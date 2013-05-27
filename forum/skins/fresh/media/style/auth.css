@@ -1,9 +1,22 @@
-#bigicon_providers, #smallicon_providers {
+#bigicon_providers {
     display: block;
     padding: 0px;
     width:600px;
     margin:0px 0px 5px 0px;
     clear:both;
+}
+
+#smallicon_providers {
+    display: block;
+    padding: 0px;
+    width:600px;
+    margin:0px 0px 5px 0px;
+    clear:both;
+    visibility:hidden;
+}
+
+#toHide {
+    visibility:hidden;
 }
 
 .provider_logo {
@@ -30,8 +43,8 @@
 .provider_logo.small {
     border:1px solid #DDDDDD;
     float:left;
-    height:30px;
-    margin:3px;
+    height:1px;
+    margin:1px;
     width:30px;
 }
 
